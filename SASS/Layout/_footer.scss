@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+    width: 100%;
+
+    background-color: var($background-footer-color);
+}
