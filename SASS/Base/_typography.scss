@@ -1,2 +1,6 @@
 $font-family-text: 'Roboto', sans-serif;
 $font-family-logo: 'Shrikhand', cursive;
+
+* {
+    font-family: $font-family-text;
+}
