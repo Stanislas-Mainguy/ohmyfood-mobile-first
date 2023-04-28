@@ -1,18 +1,17 @@
-article .card {
+.exploration {
     display: flex;
     flex-direction: column;
-    width: 340px;
-    height: 251px;
-    border-radius: 15px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-        &_picture {
-            width: 346px;
-            height: 231px;
+    text-align: center;
+    width: 100%;
+    background-color: $background-grey;
+        &__title {
+            width: 275px;
+            height: 68px;
         }
 }
 
-.card_picture img {
-    object-fit: cover;
+.exploration p {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 18px;
 }
