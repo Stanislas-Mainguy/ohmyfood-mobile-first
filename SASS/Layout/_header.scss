@@ -5,9 +5,17 @@ header {
     flex-direction: column;
     width: 100%;
     height: 113px;
+        &_location {
+            flex-direction: row;
+            width: 100%;
+            height: 48.77px;
+            margin-top: 20px;
+            background-color: var($background-darkgrey);
+        }
         .logo {
             width: 162px;
-            height: 44px;
-            font-family: var($font-family-logo);
+            height: 30px;
+            margin-top: -10px;
+            margin-bottom: 18px;
         }
 }

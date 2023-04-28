@@ -1,26 +1,18 @@
-article {
-    width: 340px;
-    height: 251px;
-    margin-top: 18px;
-}
-.card {
+article .card {
     display: flex;
     flex-direction: column;
+    width: 340px;
+    height: 251px;
     border-radius: 15px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-        &_block_picture {
+        &_picture {
             width: 346px;
             height: 231px;
-            overflow: hidden;
-            z-index: 2;
         }
-        &_block_new {
-            width: 100%;
-            height: 77px;
-            padding-top: 16px;
-            padding-bottom: 12px;
-            padding-left: 13px;
-        }
+}
+
+.card_picture img {
+    object-fit: cover;
 }
