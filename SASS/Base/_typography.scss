@@ -1,13 +1,5 @@
-$font-family-text: 'Roboto', sans-serif;
-$font-family-logo: 'Shrikhand', cursive;
-
 * {
     font-family: $font-family-text;
-}
-
-p {
-    font-weight: 500;
-    font-size: 16px;
 }
 
 h1 {
@@ -27,4 +19,9 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 18px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
 }

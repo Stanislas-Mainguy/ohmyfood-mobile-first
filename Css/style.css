@@ -12,28 +12,15 @@
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
-.option__button {
-  text-align: center;
-  width: 322.49px;
-  height: 72.38pxpx;
-  border-radius: 20px;
-  border: none;
-  background: #F7F7F7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-}
-
 body {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
   margin: 0;
 }
 
 * {
   font-family: "Roboto", sans-serif;
-}
-
-p {
-  font-weight: 500;
-  font-size: 16px;
 }
 
 h1 {
@@ -53,6 +40,11 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 18px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .exploration {
@@ -125,26 +117,97 @@ input {
   background: #D2D2D2;
 }
 
+main {
+  width: 100%;
+}
+
 nav {
   display: flex;
   flex-direction: column;
-  height: 440px;
-  padding-left: 20px;
-  padding-top: 48px;
+  height: 326px;
+  padding: 46px 20px 68px 20px;
   gap: 24.92px;
 }
 
-main {
-  width: 100%;
+nav h2 {
+  margin: 0px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 289.02px;
+  height: 72.38px;
+  gap: 27px;
+  padding-left: 33.47px;
+  margin-left: 12.5px;
+  border-radius: 20px;
+  background-color: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.list__number {
+  position: absolute;
+  text-align: center;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  width: 24px;
+  height: 19px;
+  margin-left: -45px;
+  color: #F7F7F7;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  height: 1201px;
+  padding: 52px 18px 66px 17px;
+  gap: 18px;
+  background-color: #EAEAEA;
+}
+
+.restaurants h2 {
+  margin: 0px;
+}
+
+.card {
+  width: 340px;
+  height: 251px;
+}
+.card__picture {
+  background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  width: 346px;
+  height: 231px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 25px;
-  width: 100%;
+  padding: 20px 25px;
+  max-width: 375px;
   height: 186px;
-  background-color: var(#353535);
+  gap: 9px;
+  color: #FFFFFF;
+  background-color: #353535;
+}
+
+footer h1 {
+  font-size: 18px;
+  margin: 0px;
+  margin-bottom: 18px;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+}
+
+footer p {
+  margin: 0px;
 }/*# sourceMappingURL=style.css.map */

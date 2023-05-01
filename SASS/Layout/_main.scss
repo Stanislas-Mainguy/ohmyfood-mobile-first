@@ -2,3 +2,65 @@ main {
     width: 100%;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    height: 326px;
+    padding: 46px 20px 68px 20px;
+    gap: 24.92px;
+}
+
+nav h2 {
+    margin: 0px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 289.02px;
+    height: 72.38px;
+    gap: 27px;
+    padding-left: 33.47px;
+    margin-left: 12.5px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.list__number {
+    position: absolute;
+    text-align: center;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    width: 24px;
+    height: 19px;
+    margin-left: -45px;
+    color: #F7F7F7;
+    border-radius: 50%;
+    background-color: $primary-color;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    height: 1201px;
+    padding: 52px 18px 66px 17px;
+    gap: 18px;
+    background-color: $background-grey;
+}
+
+.restaurants h2 {
+    margin: 0px;
+}
+
+.card {
+    width: 340px;
+    height: 251px;
+        &__picture {
+            background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            width: 346px;
+            height: 231px;
+            object-fit: cover;
+        }
+}
