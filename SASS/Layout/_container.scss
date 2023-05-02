@@ -26,3 +26,20 @@
             }
         }
 }
+
+@media screen and (min-width: 768.98px) {
+    .exploration {
+        height: auto;
+        padding-bottom: 30px;
+        &__title {
+            width: 100%;
+            margin-top: 30px;
+            h2 {
+                font-size: 40px;
+            }
+        }
+        &__subtitle {
+            width: 100%;
+        }
+    }
+}

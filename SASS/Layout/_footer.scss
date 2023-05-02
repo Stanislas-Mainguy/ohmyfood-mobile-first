@@ -18,6 +18,10 @@ footer h1 {
     display: flex;
     flex-direction: row;
     gap: 11px;
+    align-items: baseline;
+        i {
+            font-size: 14px;
+        }
 }
 
 footer p {
