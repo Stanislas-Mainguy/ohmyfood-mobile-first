@@ -153,12 +153,26 @@ nav {
         padding: 30px 18px;
         &__block {
             justify-content: center;
-            gap: 25px 3.44827586%;  
+            gap: 25px 25px;  
             margin: 0px auto;
             max-width: 1024px;
         }
     }
     .card {
         max-width: 490px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .restaurants {
+        position: relative;
+        padding: 30px 0px;
+        &__block {
+            gap: 50px 100px;
+        }
+        h2 {
+            position: absolute;
+            top: 55px;
+        }
     }
 }
