@@ -27,6 +27,8 @@ body {
 
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
+  font-weight: 700;
 }
 
 h1 {
@@ -34,23 +36,66 @@ h1 {
   font-weight: 400;
   font-size: 30px;
   font-style: italic;
-  margin-top: 9.835px;
-  margin-bottom: 9.835px;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 24px;
 }
 
 h3 {
-  font-weight: 700;
   font-size: 18px;
+}
+
+h4 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
 }
 
 p {
   font-weight: 500;
   font-size: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 113px;
+}
+
+header .logo {
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #D2D2D2;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 142px;
+  height: 50px;
+  gap: 17px;
+  background-color: #D2D2D2;
+}
+form input {
+  width: 113px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+  border-style: none;
+  background: #D2D2D2;
 }
 
 .exploration {
@@ -98,47 +143,6 @@ p {
     width: 100%;
   }
 }
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 113px;
-}
-
-header .logo {
-  z-index: 1;
-  text-align: center;
-  width: 100%;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-.location {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: #D2D2D2;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  width: 142px;
-  height: 50px;
-  gap: 17px;
-  background-color: #D2D2D2;
-}
-
-input {
-  width: 113px;
-  font-weight: 500;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  text-align: start;
-  border-style: none;
-  background: #D2D2D2;
-}
-
 nav {
   display: flex;
   flex-direction: column;
@@ -232,8 +236,9 @@ nav h2 {
   height: 11.55378486%;
   width: 80px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  border-radius: 2px;
+  top: 15px;
+  right: 15px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .card__new p {
@@ -300,7 +305,7 @@ nav h2 {
     grid-area: 2/3/3/4;
   }
   .restaurants {
-    padding: 30px auto;
+    padding: 30px 18px;
   }
   .restaurants__block {
     justify-content: center;
@@ -333,8 +338,8 @@ footer h1 {
   gap: 11px;
   align-items: baseline;
 }
-.footer__block i {
-  font-size: 14px;
+.footer__block .fa-utensils, .footer__block .fa-handshake-angle {
+  font-size: 0.8em;
 }
 
 footer p {

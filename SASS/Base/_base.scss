@@ -6,3 +6,36 @@ body {
     margin-right: auto;
     box-sizing: border-box;
 }
+
+* {
+    font-family: $font-family-text;
+    margin: 0px;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: $font-family-logo;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-family: $font-family-logo;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+}

@@ -27,14 +27,14 @@ form {
     height: 50px;
     gap: 17px;
     background-color: $background-darkgrey;
+    input {
+        width: 113px;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: $font-family-text;
+        text-align: start;
+        border-style: none;
+        background: $background-darkgrey;
+    }
 }
 
-input {
-    width: 113px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: $font-family-text;
-    text-align: start;
-    border-style: none;
-    background: $background-darkgrey;
-}

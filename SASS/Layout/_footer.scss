@@ -18,8 +18,8 @@ footer h1 {
     flex-direction: row;
     gap: 11px;
     align-items: baseline;
-        i {
-            font-size: 14px;
+        .fa-utensils, .fa-handshake-angle{
+            font-size: 0.8em;
         }
 }
 
