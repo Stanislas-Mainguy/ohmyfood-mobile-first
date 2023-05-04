@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -10,7 +10,6 @@ body {
 * {
     font-family: $font-family-text;
     margin: 0px;
-    font-weight: 700;
 }
 
 h1 {
@@ -21,10 +20,12 @@ h1 {
 }
 
 h2 {
+    font-weight: 700;
     font-size: 24px;
 }
 
 h3 {
+    font-weight: 700;
     font-size: 18px;
 }
 
