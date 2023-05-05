@@ -14,18 +14,15 @@ nav {
             border-radius: 20px;
             background-color: #F7F7F7;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            transition-property: transform;
+            transition-duration: 300ms;
                 p {
                     font-weight: bold;
                 }
                 i {
                     color: #7E7E7E;
                 }
-                &:active {
-                    transform: scale(1.1);
-                        i {
-                            color: $primary-color;
-                        }
-                }
+                @include nav__list--animation;
         }
         .list__number {
             position: absolute;
@@ -60,6 +57,7 @@ nav {
     border-radius: 15px;
     background-color: #FFFFFF;
     overflow: hidden;
+    cursor: pointer;
         &__picture {
             position: relative;
             width: 100%;

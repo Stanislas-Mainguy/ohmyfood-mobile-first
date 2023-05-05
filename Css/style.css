@@ -123,10 +123,14 @@ form input {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  transition-property: transform;
+  transition-duration: 300ms;
 }
-.exploration__button:active {
+.exploration__button:hover {
   transform: scale(1.2);
   filter: brightness(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768.98px) {
@@ -161,6 +165,8 @@ nav .nav__list {
   border-radius: 20px;
   background-color: #F7F7F7;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition-property: transform;
+  transition-duration: 300ms;
 }
 nav .nav__list p {
   font-weight: bold;
@@ -168,10 +174,12 @@ nav .nav__list p {
 nav .nav__list i {
   color: #7E7E7E;
 }
-nav .nav__list:active {
+nav .nav__list:hover {
   transform: scale(1.1);
+  box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
-nav .nav__list:active i {
+nav .nav__list:hover i {
   color: #9356DC;
 }
 nav .list__number {
@@ -206,6 +214,7 @@ nav .list__number {
   border-radius: 15px;
   background-color: #FFFFFF;
   overflow: hidden;
+  cursor: pointer;
 }
 .card__picture {
   position: relative;
