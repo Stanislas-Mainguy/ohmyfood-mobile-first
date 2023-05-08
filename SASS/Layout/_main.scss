@@ -128,6 +128,53 @@ nav {
         }
 }
 
+.menu__general {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+        .menu__restaurant {
+            display: flex;
+            flex-direction: column;
+            background-color: $background-grey;
+            width: 100%;
+            padding-left: 13px;
+            padding-right: 13px;
+            max-width: 1055px;
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 42px;
+                        h2 {
+                            font-family: $font-family-logo;
+                            font-weight: 400;
+                            font-style: italic;
+                            font-size: 28px;
+                        }
+                }
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    overflow: hidden;
+                        .menu__block {
+                            width: 100%;
+                            height: 69px;
+                            border-radius: 15px;
+                            background-color: $color-white;
+                                .card__text2 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding-left: 15px;
+                                    gap: 5px;
+                                }
+                        }
+                }
+        }
+}
+
+
 @keyframes heart--animation {
     from {
         transform: scale(font-size 0);
