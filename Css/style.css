@@ -406,14 +406,15 @@ nav .list__number {
   flex-direction: column;
   background-color: #EAEAEA;
   width: 100%;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding: 35px 13px 40px 13px;
   max-width: 1055px;
+  gap: 40px;
+  border-radius: 30px 30px 0px 0px;
 }
 .menu__general .menu__restaurant .title {
   display: flex;
   flex-direction: row;
-  margin-bottom: 42px;
+  margin-bottom: 2px;
 }
 .menu__general .menu__restaurant .title h2 {
   font-family: "Shrikhand", cursive;
@@ -427,17 +428,51 @@ nav .list__number {
   gap: 12px;
   overflow: hidden;
 }
-.menu__general .menu__restaurant .menu .menu__block {
-  width: 100%;
-  height: 69px;
+.menu__general .menu__restaurant .menu .block__h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 27px;
+}
+.menu__general .menu__restaurant .menu .block__h3 h3 {
+  font-weight: 300;
+  font-size: 16px;
+}
+.menu__general .menu__restaurant .menu .block__h3 .color__bar {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
   border-radius: 15px;
+}
+.menu__general .menu__restaurant .menu .menu__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  padding: 12px 0px 12px 15px;
   background-color: #FFFFFF;
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
-  gap: 5px;
+  justify-content: space-between;
+}
+.menu__general .menu__restaurant .menu .menu__block .card__text2 p {
+  font-weight: 300;
+  font-size: 15px;
+}
+.menu__general .menu__restaurant .menu .menu__block .price {
+  display: flex;
+  align-items: end;
+}
+.menu__general .menu__restaurant .block__button {
+  display: flex;
+  justify-content: center;
+}
+.menu__general .menu__restaurant .block__button .exploration__button {
+  margin-top: 0px;
 }
 
 @keyframes heart--animation {
