@@ -444,6 +444,8 @@ nav .list__number {
   display: flex;
   flex-direction: row;
   margin-bottom: 2px;
+  gap: 60px;
+  align-items: center;
 }
 .menu__general .menu__restaurant .title h2 {
   font-family: "Shrikhand", cursive;
@@ -451,11 +453,26 @@ nav .list__number {
   font-style: italic;
   font-size: 28px;
 }
+.menu__general .menu__restaurant .title i {
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+  transition-property: all;
+  transition-duration: 2s;
+}
+.menu__general .menu__restaurant .title i:hover {
+  background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #9356DC;
+}
 .menu__general .menu__restaurant .menu {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  overflow: hidden;
+  width: 349px;
 }
 .menu__general .menu__restaurant .menu .block__h3 {
   display: flex;
@@ -478,15 +495,28 @@ nav .list__number {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 45px;
+  height: 69px;
   border-radius: 15px;
-  padding: 12px 0px 12px 15px;
   background-color: #FFFFFF;
+  cursor: pointer;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 3s;
+}
+.menu__general .menu__restaurant .menu .menu__block:hover .slide__check {
+  transform: translateX(-60px);
+}
+.menu__general .menu__restaurant .menu .menu__block:hover .price {
+  transform: translateX(-60px);
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 12px 15px;
+  width: 285px;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 p {
   font-weight: 300;
@@ -495,6 +525,32 @@ nav .list__number {
 .menu__general .menu__restaurant .menu .menu__block .price {
   display: flex;
   align-items: end;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 35px;
+  height: 45px;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.menu__general .menu__restaurant .menu .menu__block .slide__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 59px;
+  height: 69px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  flex-shrink: 0;
+}
+.menu__general .menu__restaurant .menu .menu__block .slide__check i {
+  background-color: white;
+  font-size: 1.5em;
+  color: #99E2D0;
+  border-radius: 50%;
 }
 .menu__general .menu__restaurant .block__button {
   display: flex;
@@ -523,6 +579,14 @@ nav .list__number {
   animation-delay: 1500ms;
 }
 
+@keyframes list--check {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-60px);
+  }
+}
 @keyframes card--animation {
   from {
     transform: translateY(1000px);
