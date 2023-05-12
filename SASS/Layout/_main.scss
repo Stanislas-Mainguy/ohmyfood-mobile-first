@@ -194,39 +194,34 @@ nav {
                         .menu__block {
                             display: flex;
                             flex-direction: row;
-                            justify-content: space-between;
-                            width: 600px;
+                            width: 349px;
                             height: 69px;
                             border-radius: 15px;
                             background-color: $color-white;
                             cursor: pointer;
                             overflow: hidden;
-                            animation: list--check 3s forwards;
+                            transition-property: all;
+                            transition-duration: 3s;
                                 &:hover .slide__check {
-                                    @include list--check
+                                    transform: translateY(-60);
                                 }
                                 &:hover .price {
-                                    @include list--check
-                                }
-                                &:hover .card__text2 {
-                                    flex-shrink: 1;
+                                    transform: translateY(-60);
                                 }
                                 .card__text2 {
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    padding: 12px 0px 12px 15px;
-                                    width: 100%;
+                                    padding: 12px 15px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
                                         h4 {
-                                            text-overflow: ellipsis;
-                                            white-space: nowrap;
-                                            overflow: hidden;
+                                            font-weight: 500;
                                         }
                                         p {
                                             font-weight: 300;
                                             font-size: 15px;
-                                            text-overflow: ellipsis;
-                                            white-space: nowrap;
+                                            
                                         }
                                 }
                                 .price {
@@ -234,7 +229,7 @@ nav {
                                     align-items: end;
                                     border-top-right-radius: 15px;
                                     border-bottom-right-radius: 15px;
-                                    width: 35px;
+                                    width: 37px;
                                     height: 45px;
                                     margin-top: 12px;
                                     font-weight: 700;
@@ -271,12 +266,10 @@ nav {
 }
 
 .img__restaurant {
-    height: 275px;
+    width: 500px;
+    height: 500px;
         img {
-            max-height: 275px;
-            max-width: 100%;
             object-fit: cover;
-            object-position: center;
         }
 }
 
@@ -297,15 +290,6 @@ nav {
 .card__item4 {
     animation: card--animation 2s forwards;
     animation-delay: 1500ms;
-}
-
-@keyframes list--check {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-60px);
-    }
 }
 
 @keyframes card--animation {
