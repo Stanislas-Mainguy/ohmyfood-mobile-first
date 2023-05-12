@@ -5,12 +5,12 @@ body {
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
 }
 
 * {
   font-family: "Roboto", sans-serif;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 a {
@@ -162,6 +162,7 @@ p {
   }
 }
 header {
+  order: 0;
   align-items: center;
   width: 100%;
 }
@@ -225,6 +226,7 @@ form input {
   }
 }
 .exploration {
+  order: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,8 +287,13 @@ form input {
     width: 100%;
   }
 }
+main {
+  order: 2;
+}
+
 nav {
   display: flex;
+  order: 3;
   flex-direction: column;
   padding: 46px 20px 68px 20px;
   gap: 24.92px;
@@ -423,37 +430,35 @@ nav .list__number {
   height: 100%;
 }
 
-.menu__general {
+.menu__restaurant {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.menu__general .menu__restaurant {
-  display: flex;
+  z-index: 2;
+  top: 283px;
   flex-direction: column;
   background-color: #EAEAEA;
-  width: 100%;
   padding: 35px 13px 40px 13px;
   max-width: 1055px;
+  width: 100%;
   gap: 40px;
   border-radius: 30px 30px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
-.menu__general .menu__restaurant .title {
+.menu__restaurant .title {
   display: flex;
   flex-direction: row;
   margin-bottom: 2px;
   gap: 60px;
   align-items: center;
 }
-.menu__general .menu__restaurant .title h2 {
+.menu__restaurant .title h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-style: italic;
   font-size: 28px;
 }
-.menu__general .menu__restaurant .title i {
+.menu__restaurant .title i {
   z-index: 2;
   cursor: pointer;
   font-size: 1.5em;
@@ -462,85 +467,84 @@ nav .list__number {
   transition-property: all;
   transition-duration: 2s;
 }
-.menu__general .menu__restaurant .title i:hover {
+.menu__restaurant .title i:hover {
   background: -webkit-linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: #9356DC;
 }
-.menu__general .menu__restaurant .menu {
+.menu__restaurant .menu {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.menu__general .menu__restaurant .menu .block__h3 {
+.menu__restaurant .menu .block__h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 27px;
 }
-.menu__general .menu__restaurant .menu .block__h3 h3 {
+.menu__restaurant .menu .block__h3 h3 {
   font-weight: 300;
   font-size: 16px;
 }
-.menu__general .menu__restaurant .menu .block__h3 .color__bar {
+.menu__restaurant .menu .block__h3 .color__bar {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
   border-radius: 15px;
 }
-.menu__general .menu__restaurant .menu .menu__block {
+.menu__restaurant .menu .menu__block {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 349px;
   height: 69px;
   border-radius: 15px;
   background-color: #FFFFFF;
   cursor: pointer;
   overflow: hidden;
-  transition-property: all;
-  transition-duration: 3s;
 }
-.menu__general .menu__restaurant .menu .menu__block:hover .slide__check {
-  transform: translateX(-60px);
+.menu__restaurant .menu .menu__block:hover .slide__check {
+  display: flex;
 }
-.menu__general .menu__restaurant .menu .menu__block:hover .price {
-  transform: translateX(-60px);
-}
-.menu__general .menu__restaurant .menu .menu__block:hover .card__text2 {
-  flex-shrink: 1;
-}
-.menu__general .menu__restaurant .menu .menu__block .card__text2 {
+.menu__restaurant .menu .menu__block .card__text2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 12px 15px;
-  width: 300px;
+  flex: auto;
+  overflow: hidden;
 }
-.menu__general .menu__restaurant .menu .menu__block .card__text2 h4 {
-  text-overflow: ellipsis;
+.menu__restaurant .menu .menu__block .card__text2 h4 {
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__general .menu__restaurant .menu .menu__block .card__text2 p {
+.menu__restaurant .menu .menu__block .card__text2 p {
   font-weight: 300;
   font-size: 15px;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__general .menu__restaurant .menu .menu__block .price {
+.menu__restaurant .menu .menu__block .price {
   display: flex;
+  flex: initial;
   align-items: end;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 37px;
+  margin-right: 18px;
   height: 45px;
   margin-top: 12px;
   font-weight: 700;
   font-size: 15px;
   flex-shrink: 0;
+  transition-property: all;
+  transition-duration: 2s;
 }
-.menu__general .menu__restaurant .menu .menu__block .slide__check {
-  display: flex;
+.menu__restaurant .menu .menu__block .slide__check {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 59px;
@@ -548,30 +552,37 @@ nav .list__number {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  flex-shrink: 0;
+  transition-property: all;
+  transition-duration: 2s;
 }
-.menu__general .menu__restaurant .menu .menu__block .slide__check i {
+.menu__restaurant .menu .menu__block .slide__check i {
   background-color: white;
   font-size: 1.5em;
   color: #99E2D0;
   border-radius: 50%;
 }
-.menu__general .menu__restaurant .block__button {
+.menu__restaurant .block__button {
   display: flex;
   justify-content: center;
 }
-.menu__general .menu__restaurant .block__button .exploration__button {
+.menu__restaurant .block__button .exploration__button {
   margin-top: 0px;
 }
 
 .img__restaurant {
-  width: 500px;
-  height: 500px;
+  display: flex;
+  order: 1;
+  width: 100%;
+  height: 275px;
+  top: 63px;
 }
 .img__restaurant img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .card__item1 {
@@ -676,6 +687,10 @@ nav .list__number {
   }
 }
 footer {
+  order: 3;
+  z-index: 3;
+  -o-object-position: bottom;
+     object-position: bottom;
   padding: 22px 25px;
   gap: 10px;
   color: #FFFFFF;

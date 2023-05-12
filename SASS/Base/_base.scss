@@ -4,13 +4,13 @@ body {
     margin: 0px;
     padding: 0px;
     margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+    margin-right: auto; 
 }
 
 * {
     font-family: $font-family-text;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 a {
