@@ -203,10 +203,10 @@ nav {
                             transition-property: all;
                             transition-duration: 3s;
                                 &:hover .slide__check {
-                                    transform: translateY(-60);
+                                    transform: translateX(-60px);
                                 }
                                 &:hover .price {
-                                    transform: translateY(-60);
+                                    transform: translateX(-60px);
                                 }
                                 .card__text2 {
                                     display: flex;
@@ -269,6 +269,7 @@ nav {
     width: 500px;
     height: 500px;
         img {
+            height: 100%;
             object-fit: cover;
         }
 }

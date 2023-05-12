@@ -502,10 +502,10 @@ nav .list__number {
   transition-duration: 3s;
 }
 .menu__general .menu__restaurant .menu .menu__block:hover .slide__check {
-  transform: translateY(-60);
+  transform: translateX(-60px);
 }
 .menu__general .menu__restaurant .menu .menu__block:hover .price {
-  transform: translateY(-60);
+  transform: translateX(-60px);
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 {
   display: flex;
@@ -564,6 +564,7 @@ nav .list__number {
   height: 500px;
 }
 .img__restaurant img {
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
