@@ -512,15 +512,18 @@ nav .list__number {
   flex-direction: column;
   justify-content: space-between;
   padding: 12px 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 300px;
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 h4 {
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__general .menu__restaurant .menu .menu__block .card__text2 p {
   font-weight: 300;
   font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu__general .menu__restaurant .menu .menu__block .price {
   display: flex;
