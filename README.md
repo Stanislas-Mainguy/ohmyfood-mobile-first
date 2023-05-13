@@ -10,4 +10,4 @@ Guide --->
 https://course.ocstatic.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Guide+d%E2%80%99e%CC%81tapes+cle%CC%81s+%E2%80%93+Ame%CC%81liorez+l'interface+d'un+site+mobile+avec+des+animations+CSS.pdf
 
 GH-Page --->
-https://stanislas-mainguy.github.io/OpenClassrooms_Projet4/
+https://stanislas-mainguy.github.io/OpenClassrooms_Projet4/](https://stanislas-mainguy.github.io/OpenClassrooms_Projet4
