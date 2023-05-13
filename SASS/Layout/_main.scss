@@ -33,7 +33,7 @@ nav {
             padding-top: 2.5px;
             padding-bottom: 2.5px;
             width: 24px;
-            height: 19px;
+            height: 24px;
             margin-left: -45px;
             color: #F7F7F7;
             border-radius: 50%;
@@ -134,7 +134,7 @@ nav {
 .menu__restaurant {
             display: flex;
             z-index: 2;
-            top: 283px;
+            margin-top: 220px;
             flex-direction: column;
             background-color: $background-grey;
             padding: 35px 13px 40px 13px;
@@ -148,6 +148,7 @@ nav {
                 .title {
                     display: flex;
                     flex-direction: row;
+                    justify-content: space-between;
                     margin-bottom: 2px;
                     gap: 60px;
                     align-items: center;
@@ -156,8 +157,11 @@ nav {
                             font-weight: 400;
                             font-style: italic;
                             font-size: 28px;
+                            white-space: nowrap;
                         }
                         i {
+                            position: absolute;
+                            right: 35px;
                             z-index: 2;
                             cursor: pointer;
                             font-size: 1.5em;
@@ -197,7 +201,7 @@ nav {
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
-                            width: 349px;
+                            width: 100%;
                             height: 69px;
                             border-radius: 15px;
                             background-color: $color-white;
@@ -205,14 +209,16 @@ nav {
                             overflow: hidden;
                                 &:hover .slide__check {
                                     display: flex;
+                                    flex-shrink: 0;
                                 }
                                 .card__text2 {
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: space-between;
-                                    padding: 12px 15px;
+                                    padding: 12px;
                                     flex: auto;
                                     overflow: hidden;
+                                    width: 285px;
                                         h4 {
                                             white-space: nowrap;
                                             text-overflow: ellipsis;
@@ -232,7 +238,7 @@ nav {
                                     align-items: end;
                                     border-top-right-radius: 15px;
                                     border-bottom-right-radius: 15px;
-                                    margin-right: 18px;
+                                    margin-right: 13px;
                                     height: 45px;
                                     margin-top: 12px;
                                     font-weight: 700;
@@ -273,6 +279,7 @@ nav {
 
 .img__restaurant {
     display: flex;
+    position: absolute;
     order: 1;
     width: 100%;
     height: 275px;
