@@ -242,9 +242,6 @@ nav {
                                     font-weight: 700;
                                     font-size: 15px;
                                     flex-shrink: 0;
-                                    transition-property: all;
-                                    transition-duration: 2s;
-                                    
                                 }
                                 .slide__check {
                                     display: none;
@@ -255,8 +252,6 @@ nav {
                                     background-color: $tertiary-color;
                                     border-top-right-radius: 15px;
                                     border-bottom-right-radius: 15px;
-                                    transition-property: all;
-                                    transition-duration: 2s;
                                         i {
                                             background-color: white;
                                             font-size: 1.5em;

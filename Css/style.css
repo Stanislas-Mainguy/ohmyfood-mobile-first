@@ -545,8 +545,6 @@ nav .list__number {
   font-weight: 700;
   font-size: 15px;
   flex-shrink: 0;
-  transition-property: all;
-  transition-duration: 2s;
 }
 .menu__restaurant .menu .menu__block .slide__check {
   display: none;
@@ -557,8 +555,6 @@ nav .list__number {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition-property: all;
-  transition-duration: 2s;
 }
 .menu__restaurant .menu .menu__block .slide__check i {
   background-color: white;
