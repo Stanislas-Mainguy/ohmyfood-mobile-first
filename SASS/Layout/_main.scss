@@ -160,8 +160,6 @@ nav {
                             white-space: nowrap;
                         }
                         i {
-                            position: absolute;
-                            right: 35px;
                             z-index: 2;
                             cursor: pointer;
                             font-size: 1.5em;
@@ -279,6 +277,7 @@ nav {
 
 .img__restaurant {
     display: flex;
+    z-index: -1;
     position: absolute;
     order: 1;
     width: 100%;
@@ -309,6 +308,25 @@ nav {
 .card__item4 {
     animation: card--animation 2s forwards;
     animation-delay: 1500ms;
+}
+
+.menu__item1 {
+    animation: card--animation 2s forwards;
+}
+
+.menu__item2 {
+    animation: card--animation 2s forwards;
+    animation-delay: 100ms;
+}
+
+.menu__item3 {
+    animation: card--animation 2s forwards;
+    animation-delay: 200ms;
+}
+
+.menu__item4 {
+    animation: card--animation 2s forwards;
+    animation-delay: 300ms;
 }
 
 @keyframes card--animation {
@@ -345,6 +363,13 @@ nav {
     .card__item4 {
         grid-area: 3 / 2 / 4 / 3;
         animation-delay: 500ms;
+    }
+    .menu__restaurant {
+        padding-left: 100px;
+        padding-right: 100px;
+            .title {
+                justify-content: center;
+            }
     }
 }
 
@@ -383,6 +408,10 @@ nav {
     .card {
         max-width: 490px;
     }
+    .menu__restaurant {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -396,5 +425,24 @@ nav {
             position: absolute;
             top: 55px;
         }
+    }
+    .img__restaurant {
+        display: flex;
+        position: absolute;
+        order: 1;
+        width: 100%;
+        height: 500px;
+        top: -100px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+    }
+    .menu__restaurant {
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-top: 250px;
     }
 }
