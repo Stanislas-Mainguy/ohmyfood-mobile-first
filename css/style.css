@@ -662,6 +662,7 @@ nav .list__number {
   }
   .menu__restaurant .title {
     justify-content: center;
+    gap: 24px;
   }
 }
 @media screen and (min-width: 1024px) {
