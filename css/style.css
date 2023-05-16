@@ -449,7 +449,6 @@ nav .list__number {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2px;
-  gap: 60px;
   align-items: center;
 }
 .menu__restaurant .title h2 {
