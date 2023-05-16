@@ -247,7 +247,6 @@ form input {
   text-align: center;
 }
 .exploration__subtitle p {
-  font-weight: 500;
   font-size: 18px;
 }
 
@@ -391,7 +390,6 @@ nav .list__number {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .card__new p {
-  font-weight: 300;
   font-size: 17px;
 }
 .card__text {
@@ -527,7 +525,6 @@ nav .list__number {
   overflow: hidden;
 }
 .menu__restaurant .menu .menu__block .card__text2 p {
-  font-weight: 300;
   font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
