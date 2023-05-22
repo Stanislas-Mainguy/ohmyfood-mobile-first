@@ -506,8 +506,7 @@ nav .list__number {
   overflow: hidden;
 }
 .menu__restaurant .menu .menu__block:hover .slide__check {
-  display: flex;
-  flex-shrink: 0;
+  margin-right: 0px;
 }
 .menu__restaurant .menu .menu__block .card__text2 {
   display: flex;
@@ -531,7 +530,6 @@ nav .list__number {
 }
 .menu__restaurant .menu .menu__block .price {
   display: flex;
-  flex: initial;
   align-items: end;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -543,7 +541,7 @@ nav .list__number {
   flex-shrink: 0;
 }
 .menu__restaurant .menu .menu__block .slide__check {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 59px;
@@ -551,6 +549,9 @@ nav .list__number {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin-right: -60px;
+  flex-shrink: 0;
+  transition-duration: 2000ms;
 }
 .menu__restaurant .menu .menu__block .slide__check i {
   background-color: white;
