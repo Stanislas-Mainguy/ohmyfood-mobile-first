@@ -16,14 +16,14 @@ nav {
             padding-left: 33.47px;
             margin-left: 12.5px;
             border-radius: 20px;
-            background-color: #F7F7F7;
+            background-color: $background-grey;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             transition-property: transform;
             transition-duration: 300ms;
                 p {
                     font-weight: bold;
                 }
-                i {
+                .icone-nav {
                     color: #7E7E7E;
                 }
                 @include nav__list--animation;
@@ -104,7 +104,7 @@ nav {
                     flex-direction: column;
                     width: 164px;
                 }
-                i {
+                .card_heart {
                     position: absolute;
                     z-index: 3;
                     top: 15px;
@@ -157,11 +157,11 @@ nav {
                             font-size: 28px;
                             white-space: nowrap;
                         }
-                        i {
+                        .menu_heart {
                             z-index: 2;
                             cursor: pointer;
                             font-size: 1.5em;
-                            color: white;
+                            color: $background-grey;
                             text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
                             transition-property: all;
                             transition-duration: 2s;

@@ -6,8 +6,12 @@ footer {
     gap: 10px;
     color: #FFFFFF;
     background-color: $background-black;
-        h1 {
+        h2 {
             margin-bottom: 5px;
+            font-family: $font-family-logo;
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
         }
 }
 
@@ -33,7 +37,7 @@ footer {
         justify-content: flex-end;
         align-items: baseline;
         padding: 57.333px 100px 30px 0px;
-            h5 {
+            h2 {
                 order: 4;
             }
             .footer__item1 {
