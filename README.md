@@ -52,7 +52,7 @@ L’objectif est de proposer une expérience fluide et élégante pour consulter
 - 🎨 [Figma Mockups / Maquettes Figma](https://www.figma.com/file/t4449fzDnwGYmzuwQdu87V/Projet-3-FR---Ohmyfood?node-id=0%3A1)
 - 📄 [Brief créatif PDF](https://course.oc-static.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Brief+cr%C3%A9atif+site+Ohmyfood.pdf)
 - 🗺️ [Guide d’étapes clés PDF](https://course.ocstatic.com/projects/D%C3%A9veloppeur+Web/IW_P4+Animations+CSS+Ohmyfood/Guide+d%E2%80%99e%CC%81tapes+cle%CC%81s+%E2%80%93+Ame%CC%81liorez+l'interface+d'un+site+mobile+avec+des+animations+CSS.pdf)
-- 🚀 [Live demo / Démo en ligne](https://stanislas-mainguy.github.io/OpenClassrooms_Projet4/)
+- 🚀 [Live demo / Démo en ligne](https://stanislas-mainguy.github.io/ohmyfood-mobile-first/)
 
 ---
 
